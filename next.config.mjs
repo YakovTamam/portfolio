@@ -1,4 +1,8 @@
 const nextConfig = {
+  experimental: {
+    turbo: false,
+  },
+
   sassOptions: {
     quietDeps: true,
     silenceDeprecations: ["mixed-decls", "legacy-js-api"],

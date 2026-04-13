@@ -1,5 +1,4 @@
 import "../public/assets/scss/main.scss";
-import "odometer/themes/odometer-theme-default.css"; // Import theme
 import DemoModalToggler from "@/components/common/DemoModalToggler";
 import DemoModal from "@/components/modals/DemoModal";
 import PortfolioModal from "@/components/modals/PortfolioModal";

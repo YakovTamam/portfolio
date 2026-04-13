@@ -1,6 +1,6 @@
 import { counterData3 } from "@/data/facts";
 import React from "react";
-import OdometerComponent from "../common/OdometerComponent";
+import CountUp from "react-countup";
 
 export default function Facts4() {
   return (
@@ -18,7 +18,7 @@ export default function Facts4() {
                 }`}
               >
                 <h3 className="count-number">
-                  <OdometerComponent max={item.count} />
+                  <CountUp end={item.count} />
                   {item.unit}
                 </h3>
                 <div className="tmp-light light-center" />

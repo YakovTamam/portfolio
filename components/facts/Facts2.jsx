@@ -1,6 +1,6 @@
 import React from "react";
-import OdometerComponent from "../common/OdometerComponent";
 import { counterData2 } from "@/data/facts";
+import CountUp from "react-countup";
 
 export default function Facts2() {
   return (
@@ -12,7 +12,7 @@ export default function Facts2() {
               <div className="year-expariance-wrap with-flex">
                 {/* <h2 class="year-number"><span class="counter">25 </span> </h2> */}
                 <h2 className="counter year-number">
-                  <OdometerComponent max={25} />
+                  <CountUp end={25} />
                 </h2>
                 <h3 className="year-title">
                   Years Of <br />
@@ -39,7 +39,7 @@ export default function Facts2() {
                       } ${item.active ? "active" : ""}`}
                     >
                       <h3 className="counter counter-title">
-                        <OdometerComponent max={item.count} />
+                        <CountUp end={item.count} />
                         {item.unit}
                       </h3>
                       <div className="tmp-light light-left" />

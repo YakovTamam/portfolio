@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { skillsData } from "@/data/skills";
-import OdometerComponent from "../common/OdometerComponent";
+import CountUp from "react-countup";
+
 export default function Skills8({
   parentClass = "tmp-service-area pb--80 banner-personal-portfolio signle-section",
 }) {
@@ -35,7 +36,7 @@ export default function Skills8({
                   height={skill.height}
                 />
                 <h3 className="count-number">
-                  <OdometerComponent max={skill.percentage} />%
+                  <CountUp end={skill.percentage} />%
                 </h3>
                 <p className="name">{skill.name}</p>
               </div>

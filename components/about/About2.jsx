@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import OdometerComponent from "../common/OdometerComponent";
+import CountUp from "react-countup";
+
 export default function About2({ parentClass = "about-us-area" }) {
   return (
     <section className={parentClass} id="about">
@@ -10,7 +11,7 @@ export default function About2({ parentClass = "about-us-area" }) {
             <div className="about-us-left-content-wrap">
               <div className="years-of-experience-card tmponhover active tmp-scroll-trigger tmp-fade-in animation-order-1">
                 <h3 className="counter card-title">
-                  <OdometerComponent max={10} />+
+                  <CountUp end={10} />+
                 </h3>
                 <div className="tmp-light light-top-left" />
                 <p className="card-para">years of experience</p>

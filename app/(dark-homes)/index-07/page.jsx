@@ -1,3 +1,5 @@
+"use client";
+
 import About4 from "@/components/about/About4";
 import Blogs4 from "@/components/blogs/Blogs4";
 import IntroVideo from "@/components/common/IntroVideo";
